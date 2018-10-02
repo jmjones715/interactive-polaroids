@@ -13,7 +13,6 @@ html {
   border-radius: 4px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
   position: absolute;
-
 }
 
 .polaroid > img {
@@ -21,7 +20,6 @@ html {
   width: 100%;
 
   position: relative;
-
 }
 
 .polaroid > figcaption {
@@ -58,4 +56,13 @@ html {
   transform: rotate(0);
   transition: all .2s linear;
   z-index: 4;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, .9);
+}
+
+.polaroid:hover .polaroid:nth-child(1) {
+  z-index: 6;
+}
+
+.polaroid:hover .polaroid:nth-child(3) {
+  z-index: 6;
 }
